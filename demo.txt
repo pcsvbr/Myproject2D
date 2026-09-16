@@ -1,0 +1,48 @@
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> ls -Hidden
+
+
+    Directory: C:\Users\CDAC\Desktop\Sample_Demo\MyProject2
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                         
+----                 -------------         ------ ----                                                                                                                         
+d--h--         9/16/2026   2:45 PM                .git                                                                                                                         
+
+
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git remote add origin https://github.com/pcsvbr/Myproject2D.git
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git remote -v
+origin  https://github.com/pcsvbr/Myproject2D.git (fetch)
+origin  https://github.com/pcsvbr/Myproject2D.git (push)
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git branch
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git add .
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git commit -m "initation"
+[main (root-commit) f04045a] initation
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git push                 
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 208 bytes | 208.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/pcsvbr/Myproject2D.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git branch
+* main
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> git push
+Everything up-to-date
+PS C:\Users\CDAC\Desktop\Sample_Demo\MyProject2> 
+
+This is modificatin M vs A
